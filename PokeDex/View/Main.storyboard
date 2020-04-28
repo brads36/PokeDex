@@ -25,15 +25,15 @@
                                     <constraint firstAttribute="width" secondItem="MRF-M9-YPl" secondAttribute="height" multiplier="1:1" id="5HG-VR-FJo"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Poke ID)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19j-Ka-hbq">
-                                <rect key="frame" x="8" y="550" width="398" height="18"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Pokemon Name)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qg2-wh-O66">
                                 <rect key="frame" x="8" y="514" width="398" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Poke ID)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19j-Ka-hbq">
+                                <rect key="frame" x="8" y="550" width="398" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -55,6 +55,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8Ho-Jb-Nbk"/>
                     </view>
+                    <connections>
+                        <outlet property="pokeIDLabel" destination="19j-Ka-hbq" id="VP9-Yw-qMc"/>
+                        <outlet property="pokeImageView" destination="MRF-M9-YPl" id="YRp-Ph-qUw"/>
+                        <outlet property="pokeNameLabel" destination="qg2-wh-O66" id="5aD-uN-CjO"/>
+                        <outlet property="pokeSearchBar" destination="EhR-YS-SZr" id="Dc0-b3-yT3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aCZ-PR-AU5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
